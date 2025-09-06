@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketplaceSaaS.API", "MarketplaceSaaS.API\MarketplaceSaaS.API.csproj", "{E6194DB9-6777-45CA-BAC8-802ADAD67930}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketplaceSaaS.Application", "MarketplaceSaaS.Application\MarketplaceSaaS.Application.csproj", "{6E3BADA3-4B53-4A10-9FA4-72F8D5EBA5B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketplaceSaaS.Infrastructure", "MarketplaceSaaS.Infrastructure\MarketplaceSaaS.Infrastructure.csproj", "{51810A38-88E9-4453-BD0F-7DB35BB1DFAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketplaceSaaS.Shared", "MarketplaceSaaS.Shared\MarketplaceSaaS.Shared.csproj", "{A522535E-6B83-49A9-8A4A-F03B48BC37D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketplaceSaaS.Domain", "MarketplaceSaaS.Domain\MarketplaceSaaS.Domain.csproj", "{A9CB1778-1CA8-4F60-B05E-D014EB41E82E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6194DB9-6777-45CA-BAC8-802ADAD67930}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6194DB9-6777-45CA-BAC8-802ADAD67930}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6194DB9-6777-45CA-BAC8-802ADAD67930}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6194DB9-6777-45CA-BAC8-802ADAD67930}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E3BADA3-4B53-4A10-9FA4-72F8D5EBA5B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E3BADA3-4B53-4A10-9FA4-72F8D5EBA5B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E3BADA3-4B53-4A10-9FA4-72F8D5EBA5B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E3BADA3-4B53-4A10-9FA4-72F8D5EBA5B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51810A38-88E9-4453-BD0F-7DB35BB1DFAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51810A38-88E9-4453-BD0F-7DB35BB1DFAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51810A38-88E9-4453-BD0F-7DB35BB1DFAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51810A38-88E9-4453-BD0F-7DB35BB1DFAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A522535E-6B83-49A9-8A4A-F03B48BC37D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A522535E-6B83-49A9-8A4A-F03B48BC37D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A522535E-6B83-49A9-8A4A-F03B48BC37D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A522535E-6B83-49A9-8A4A-F03B48BC37D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9CB1778-1CA8-4F60-B05E-D014EB41E82E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9CB1778-1CA8-4F60-B05E-D014EB41E82E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9CB1778-1CA8-4F60-B05E-D014EB41E82E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9CB1778-1CA8-4F60-B05E-D014EB41E82E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD8505CD-1E4F-47B3-9FCC-3124D4501AED}
+	EndGlobalSection
+EndGlobal

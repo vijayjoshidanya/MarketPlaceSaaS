@@ -1,0 +1,6 @@
+@MarketPlaceSaaS.Tests_HostAddress = http://localhost:5249
+
+GET {{MarketPlaceSaaS.Tests_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
