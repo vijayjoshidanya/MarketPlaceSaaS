@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarketplaceSaaS.Infrastructure.Identity
+namespace MarketplaceSaaS.DAL.Identity
 {
     internal class RoleSeeder
     {

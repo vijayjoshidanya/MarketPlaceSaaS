@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="MarketplaceSaaS.Infrastructure\**" />
+    <EmbeddedResource Remove="MarketplaceSaaS.Infrastructure\**" />
+    <None Remove="MarketplaceSaaS.Infrastructure\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.18" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.7" />
@@ -19,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MarketplaceSaaS.Application\MarketplaceSaaS.Application.csproj" />
+    <ProjectReference Include="..\MarketplaceSaaS.Application\MarketplaceSaaS.BLL.csproj" />
     <ProjectReference Include="..\MarketplaceSaaS.Domain\MarketplaceSaaS.Domain.csproj" />
     <ProjectReference Include="..\MarketplaceSaaS.Shared\MarketplaceSaaS.Shared.csproj" />
   </ItemGroup>

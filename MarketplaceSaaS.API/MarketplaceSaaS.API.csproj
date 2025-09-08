@@ -22,8 +22,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MarketplaceSaaS.Application\MarketplaceSaaS.Application.csproj" />
-    <ProjectReference Include="..\MarketplaceSaaS.Infrastructure\MarketplaceSaaS.Infrastructure.csproj" />
+    <ProjectReference Include="..\MarketplaceSaaS.Application\MarketplaceSaaS.BLL.csproj" />
+    <ProjectReference Include="..\MarketplaceSaaS.Infrastructure\MarketplaceSaaS.DAL.csproj" />
     <ProjectReference Include="..\MarketplaceSaaS.Shared\MarketplaceSaaS.Shared.csproj" />
   </ItemGroup>
 

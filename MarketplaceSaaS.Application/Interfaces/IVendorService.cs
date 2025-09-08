@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarketplaceSaaS.Application.Interfaces
+namespace MarketplaceSaaS.BLL.Interfaces
 {
     public interface IVendorService
     {

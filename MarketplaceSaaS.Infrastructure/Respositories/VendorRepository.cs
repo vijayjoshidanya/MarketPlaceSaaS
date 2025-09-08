@@ -2,8 +2,10 @@
 // Knows how to query the database (SQL).
 // Lives in Infrastructure layer.
 
-using MarketplaceSaaS.Domain.Entities;
 using MarketplaceSaaS.Domain.Repositories;
+using MarketplaceSaaS.Domain.Entities;
+
+using MarketplaceSaaS.DAL.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -11,7 +13,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarketplaceSaaS.Infrastructure.Persistence.Repositories
+namespace MarketplaceSaaS.DAL.Respositories
 {
     public class VendorRepository : IVendorRepository
     {

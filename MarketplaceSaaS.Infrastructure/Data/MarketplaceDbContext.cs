@@ -13,7 +13,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarketplaceSaaS.Infrastructure.Persistence
+namespace MarketplaceSaaS.DAL.Data
 {
     public class MarketplaceDbContext : IdentityDbContext<ApplicationUser>
     {

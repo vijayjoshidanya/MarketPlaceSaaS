@@ -1,15 +1,15 @@
 ﻿// UnitOfWork: Actual EF Core implementation of IUnitOfWork.
 // Provides access to repositories + SaveChangesAsync.
 // Lives in Infrastructure layer.
-
-using MarketplaceSaaS.Domain.Repositories;
+using MarketplaceSaaS.DAL.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MarketplaceSaaS.Domain.Repositories;
 
-namespace MarketplaceSaaS.Infrastructure.Persistence
+namespace MarketplaceSaaS.DAL.UnitOfWork
 {
     public class UnitOfWork : IUnitOfWork
     {

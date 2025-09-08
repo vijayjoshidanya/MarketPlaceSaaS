@@ -1,6 +1,5 @@
 ﻿// VendorProfile: AutoMapper Profile for Vendor Entity <-> DTO mappings.
 // Maps fields automatically so you don't write repetitive code.
-using MarketplaceSaaS.Shared.DTOs;
 using MarketplaceSaaS.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -9,8 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using AutoMapper;
+using MarketplaceSaaS.Shared.DTOs.Request;
+using MarketplaceSaaS.Shared.DTOs.Response;
 
-namespace MarketplaceSaaS.Application.MappingProfiles
+namespace MarketplaceSaaS.BLL.MappingProfiles
 {
     public class VendorProfile : Profile
     {

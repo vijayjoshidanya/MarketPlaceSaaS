@@ -3,11 +3,12 @@
 // No business logic here — only input/output.
 
 using AutoMapper;
-using MarketplaceSaaS.Shared.DTOs;
-using MarketplaceSaaS.Application.Interfaces;
 using MarketplaceSaaS.Shared;
 using MarketplaceSaaS.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
+using MarketplaceSaaS.Shared.DTOs.Request;
+using MarketplaceSaaS.Shared.DTOs.Response;
+using MarketplaceSaaS.BLL.Interfaces;
 
 namespace MarketplaceSaaS.API.Controllers
 {

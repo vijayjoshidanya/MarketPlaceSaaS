@@ -1,12 +1,9 @@
 ﻿using AutoMapper;
-using MarketplaceSaaS.Application.MappingProfiles;
-using MarketplaceSaaS.Application.Services;
-using MarketplaceSaaS.Domain.Repositories;
-using MarketplaceSaaS.Infrastructure.Persistence;
-using MarketplaceSaaS.Infrastructure.Persistence.Repositories;
+using MarketplaceSaaS.BLL.MappingProfiles;
+using MarketplaceSaaS.BLL.Services;
 using Microsoft.EntityFrameworkCore;
 using FluentValidation;
-using MarketplaceSaaS.Application.Validators;
+using MarketplaceSaaS.BLL.Validators;
 using MarketplaceSaaS.API.MiddleWares;
 using Serilog;
 using System.Reflection;
@@ -14,7 +11,11 @@ using MarketplaceSaaS.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using MarketplaceSaaS.Application.Interfaces;
+using MarketplaceSaaS.BLL.Interfaces;
+using MarketplaceSaaS.DAL.UnitOfWork;
+using MarketplaceSaaS.Domain.Repositories;
+using MarketplaceSaaS.DAL.Data;
+using MarketplaceSaaS.DAL.Respositories;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -41,25 +42,25 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddDefaultTokenProviders();
 
 // Add Authentication with JWT Bearer
-builder.Services.AddAuthentication(options =>
-{
-    options.DefaultAuthenticateScheme = "JwtBearer";
-    options.DefaultChallengeScheme = "JwtBearer";
-})
-.AddJwtBearer("JwtBearer", options =>
-{
-    options.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        ValidateLifetime = true,
-        ValidateIssuerSigningKey = true,
-        ValidIssuer = builder.Configuration["Jwt:Issuer"],
-        ValidAudience = builder.Configuration["Jwt:Audience"],
-        IssuerSigningKey = new SymmetricSecurityKey(
-System.Text.Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
-    };
-});
+//builder.Services.AddAuthentication(options =>
+//{
+//    options.DefaultAuthenticateScheme = "JwtBearer";
+//    options.DefaultChallengeScheme = "JwtBearer";
+//})
+//.AddJwtBearer("JwtBearer", options =>
+//{
+//    options.TokenValidationParameters = new TokenValidationParameters
+//    {
+//        ValidateIssuer = true,
+//        ValidateAudience = true,
+//        ValidateLifetime = true,
+//        ValidateIssuerSigningKey = true,
+//        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+//        ValidAudience = builder.Configuration["Jwt:Audience"],
+//        IssuerSigningKey = new SymmetricSecurityKey(
+//System.Text.Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+//    };
+//});
 
 
 // Program.cs: Registers your dependencies in the DI container.

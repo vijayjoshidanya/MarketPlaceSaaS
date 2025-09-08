@@ -20,4 +20,6 @@ namespace MarketplaceSaaS.Domain.Repositories
         void Remove(Vendor vendor);
 
     }
+
+
 }

@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FluentValidation;
-using MarketplaceSaaS.Shared.DTOs;
+using MarketplaceSaaS.Shared.DTOs.Request;
 
-namespace MarketplaceSaaS.Application.Validators
+namespace MarketplaceSaaS.BLL.Validators
 {
     public class VendorRequestValidator : AbstractValidator<VendorRequestDto>
     {

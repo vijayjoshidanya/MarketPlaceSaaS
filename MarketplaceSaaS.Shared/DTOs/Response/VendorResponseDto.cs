@@ -1,16 +1,16 @@
-﻿// VendorRequestDto: Defines how client sends Vendor data to the API (Create/Update).
-// Keeps your Entity safe — don't expose DB model directly!
-
+﻿// VendorResponseDto: Defines how API sends Vendor data back to the client.
+// Can hide internal fields, or include calculated values if needed.
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarketplaceSaaS.Shared.DTOs
+namespace MarketplaceSaaS.Shared.DTOs.Response
 {
-    public class VendorRequestDto
+    public class VendorResponseDto
     {
+        public Guid Id { get; set; }
         public string Name { get; set; } = null!;
         public string StoreName { get; set; } = null!;
         public string Email { get; set; } = null!;

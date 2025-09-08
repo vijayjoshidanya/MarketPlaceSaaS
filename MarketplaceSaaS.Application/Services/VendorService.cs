@@ -2,17 +2,14 @@
 // Calls Repositories via UnitOfWork.
 // Contains business logic for Vendors.
 
-using MarketplaceSaaS.Application.Interfaces;
+using MarketplaceSaaS.BLL.Interfaces;
 using MarketplaceSaaS.Domain.Entities;
 using MarketplaceSaaS.Domain.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace MarketplaceSaaS.Application.Services
+
+namespace MarketplaceSaaS.BLL.Services
 {
+
     public class VendorService : IVendorService
     {
         private readonly IUnitOfWork _unitOfWork;
